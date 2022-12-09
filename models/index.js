@@ -1,5 +1,3 @@
-// const { Sequelize } = require("sequelize")
-
 let { Sequelize, DataTypes } = require('sequelize')               // let { Sequeliza, Datatypes } = require.apply('sequelize') | just chaged this after video 10 nmpm start not working
 
 // environment variables are variables a computer stores

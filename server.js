@@ -1,12 +1,12 @@
 let express = require('express')
 let api_routes = require('./routes/api.js')
-// let path = require('path')      // just added to see if it fixed an issue
+let path = require('path')      
 
 // create web application
 let app = express()
 
-// let vueClientPath = path.join(__dirname, 'student-sign-in-client', 'dist')      // just added to see if it fixed an issue
-// app.use(express.static(vueClientPath))                                          // just added to see if it fixed an issue
+let vueClientPath = path.join(__dirname, 'student-sign-in-client', 'dist')
+app.use(express.static(vueClientPath))
 
 // be able to handle JSON requests, convert data to JavaScript
 app.use(express.json())
